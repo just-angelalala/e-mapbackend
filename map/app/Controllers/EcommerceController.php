@@ -118,7 +118,7 @@ class EcommerceController extends ResourceController
     
         // Send SMS Notification
         if ($phoneNumber) {
-            $this->sendSMSNotification($phoneNumber, 'Your order is now ready for pickup. Thank you for choosing MAP.');
+            $this->sendSMSNotification($phoneNumber, 'Your order is now ready for pickup.');
         } else {
             return $this->respond(['message' => 'Order status updated to For Pickup but failed to retrieve customer phone number.'], 200);
         }
@@ -176,7 +176,7 @@ class EcommerceController extends ResourceController
     
                 // Send SMS Notification
                 if ($phoneNumber) {
-                    $this->sendSMSNotification($phoneNumber, 'Your order is now finished.  Thank you for choosing MAP.');
+                    $this->sendSMSNotification($phoneNumber, 'We sincerely appreciate your support and look forward to serving you again soon. Thank you for choosing MAP.');
                 } else {
                     return $this->respond(['message' => 'Order status updated to For Pickup but failed to retrieve customer phone number.'], 200);
                 }

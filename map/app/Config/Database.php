@@ -27,9 +27,9 @@ class Database extends Config
     public array $default = [
         'DSN'          => '',
         'hostname'     => 'localhost',
-        'username'     => 'root',
-        'password'     => '',
-        'database'     => 'mindoro_auto_parts',
+        'username'     => 'u262559041_emap_admin',
+        'password'     => 'Emap_admin_2024',
+        'database'     => 'u262559041_emap',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,
